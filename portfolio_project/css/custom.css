@@ -1,0 +1,131 @@
+body {
+    background: #742;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+    color: #BBB;
+}
+
+.container-main {
+    align-content: center;
+    width: 100%;
+}
+
+.main-image {
+	display: block;
+	height: auto;
+	max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+    height: 100px;
+}
+.jumbotron {
+    background: #742;
+    color: white;
+    text-align: center;
+}
+.jumbotron p {
+    color: white;
+    font-size: 26px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: white;
+    margin-bottom: 5px;
+}
+.btn-primary:hover {
+    color: #27A967;
+    background-color: white;
+    border-color: white;
+}
+.glyphicon-large {
+    font-size: 100px;
+}
+.call-to-action {
+    text-align: center;
+}
+.call-to-action p {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.navbar {
+	background: #742;
+    margin-bottom: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.work-images {
+    margin: 0 auto;
+    padding: 0 auto;
+    max-height: 40%;
+    max-width: 40%;
+}
+
+.work-title {
+    font-size: 15px;
+}
+
+.work-text {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .name {
+        text-align: right;
+    }
+
+    .line {
+        width: 0px;
+    }
+
+    .work-images {
+        max-height: 40%;
+    }
+
+    .work-text {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .work-master-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .name {
+        text-align: center;
+    }
+
+    .line {
+        width: 0px;
+    }
+
+    .work-master-title {
+        text-align: center;
+    }
+
+    .work-images {
+        max-height: 40%;
+        max-width: 40%;
+    }
+}
