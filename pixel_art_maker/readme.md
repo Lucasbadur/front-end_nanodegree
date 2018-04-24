@@ -4,8 +4,8 @@
 
 This project is an interactive webpage, offering users a dynamic grid creator, and a color selector to paint squares within said grid.
 
-To run this project, clone or download the files to your local machine, and simply run __index.html__.
-<br>Or run it directly from [this link](https://lucasbadur.github.io/Pixel-Art-Maker/)!
+To run this project, just use [this link](https://lucasbadur.github.io/Pixel-Art-Maker/)!
+<br>You can also clone or download the files to your local machine, and simply run __index.html__.
 
 __How to interact with the project:__
 <br>Select a grid size (default is 15x15), select a color, and start clicking!
