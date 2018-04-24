@@ -2,6 +2,7 @@
 
 This is a repository for my personal projects developed during the Front-End Developer Nanodegree course offered by Udacity.
 <br>All projects are available to run directly from [GitHub Pages](https://pages.github.com/), simply click on the title of the project to run it.
+<br>You can also browse the source files in the folders above, and clone or download them at your leisure.
 <br>
 <br>
 
