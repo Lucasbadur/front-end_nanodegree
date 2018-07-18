@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="knockout">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  
+  <title>Neighbourhood Map</title>
+</head>
+<body>
+  <header id="errorModal" class="modal">
+    <div class="modal-content">
+      <div class="error-image-container">
+        <img src="images/no-internet.png" alt="An icon representing no connectivity." class="no-internet-image">
+      </div>
+      <p>Content could not be loaded!</p>
+      <p>Check if you're online and try refreshing the page.</p>
+    </div>
+  </header>
+  <header>
+    <nav class="my-nav">
+      <button class="traffic-button">
+        <img src="images/traffic.png" alt="An icon of a stoplight, used to represent traffic." class="traffic-image">
+      </button>
+      <div class="my-nav-wrapper">
+        <div id="slide-out" class="side-nav my-side-nav fixed">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li class="marker-title">Neighbourhood Map</li>
+            <li class="search-title">
+              <div class="search-bar">
+                <input class="filter-options" id="filter"
+                placeholder="Search for places..." type="search"
+                data-bind="textInput: filterText ">
+              </div>
+            </li>
+            <ul data-bind="foreach: filteredPlaces">
+              <li class="markers" data-bind="text: title, click: $parent.showInfoWindowSidenav">
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <a href="#" data-activates="slide-out" class="button-collapse">
+          <img src="images/menu.png" alt="A menu icon." class="menu-image">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="map"></div>
+  </main>
+
+  <!-- Using the offline, local jQuery library to handle connectivity problems -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    
+  <script src="js/application.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCAmHpRU_KZmMMNn-qxqofyJvODkFLAC8g&callback=initMap"
+  async defer onerror="mapError()">
+  </script>
+
+</body>
+</html>
